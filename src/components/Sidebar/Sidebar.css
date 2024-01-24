@@ -1,0 +1,38 @@
+.sidebar {
+    position: relative;
+    z-index: 50;
+    width: 220px;
+    max-height: 100vh;
+    display: block;
+}
+
+@media screen and (max-width: 1150px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+.sidebar__active {
+    display: block;
+}
+
+.sidebar__container {
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    background-color: #FFF;
+    width: 220px;
+    z-index: 1;
+    box-shadow: 2px 0px 10px rgb(212, 212, 212);
+}
+
+.logo__wrapper {
+    display: flex;
+}
+
+.header__logo {
+    width: 150px;
+    height: 110px;
+    object-fit: cover;
+    margin: auto;
+}

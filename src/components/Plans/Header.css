@@ -1,0 +1,138 @@
+header {
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.company__wrapper {
+    display: flex;
+    align-items: flex-end;
+}
+
+.company__container {
+    display: flex;
+    align-items: center;
+    background-color: #FFF;
+    padding: 5px 10px;
+    box-shadow: 2px 0px 10px rgb(212, 212, 212);
+    width: max-content;
+    height: 40px;
+}
+
+.company__container p {
+    margin-left: 5px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.company__img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.dropdown__btn {
+    background-color: #FFF;
+    border: none;
+    margin-left: 10px;
+    box-shadow: 2px 0px 10px rgb(212, 212, 212);
+    height: 50px;
+    width: 45px;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.dropdown__btn:hover {
+    background-color: rgb(236, 255, 236);
+}
+
+.wrapper {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+
+@media screen and (min-width: 1150px) {
+    .wrapper {
+        display: none;
+    }
+}
+  
+.effect1 {
+    position: relative;
+    z-index: 50;
+    width: 45px;
+    background: transparent;
+    border: none;
+    height: 35px;
+    padding: 0px;
+    overflow: hidden;
+}
+  
+.effect1:focus{
+    outline: none;
+}
+  
+.effect1 span{
+    display: inline-block;
+    width: 80%;
+    height: 3px;
+    background:#000;
+    position:relative;
+    transition:all .2s;
+}
+  
+  .effect1 span:before,
+  .effect1 span:after{
+    content:'';
+    position:absolute;
+    width:100%;
+    background:#000;
+    height:3px;
+    left:0px;
+    transition:all .3s;
+  }
+  
+  .effect1 span:before{
+    top:10px;
+  }
+  
+  .effect1 span:after{
+    bottom:10px;
+  }
+  
+  button.effect1:hover span:after{
+    left:-5px;
+  }
+  
+  button.effect1:hover span:before{
+    left:5px;
+  }
+  
+  button.effect1 span.active{
+    background:#FFF;
+  }
+  
+  button.effect1 span.active:after,
+  button.effect1 span.active:before{
+    top: 0px;
+    left: 0px;
+  }
+  
+  button.effect1 span.active:after{
+    transform:rotate(-45deg);
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+  }
+  
+  button.effect1 span.active:before{
+    transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+  }

@@ -1,0 +1,24 @@
+.content__container {
+    background-color: #FFF;
+    padding: 40px 30px;
+    box-shadow: 2px 0px 10px rgb(212, 212, 212);
+    margin-top: 5px;
+}
+
+.subscription__card__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.plan__card__wrapper {
+    display: flex;
+    align-items: flex-start;
+}
+
+@media screen and (max-width: 1200px) {
+    .plan__card__wrapper {
+        display: block;
+    }
+}

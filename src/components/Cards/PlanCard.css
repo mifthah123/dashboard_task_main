@@ -1,0 +1,78 @@
+.plan__card {
+    background-color: #FFF;
+    box-shadow: 2px 0px 10px rgb(212, 212, 212);
+    padding: 25px;
+    border-radius: 15px;
+    margin: 15px;
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    height: 180px;
+}
+
+.note {
+    width: max-content;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+
+.title {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.desc {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.plan__link {
+    display: flex;
+    width: fit-content;
+    padding: 5px 13px;
+    border-radius: 5px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.plan__feat__container {
+    width: 100%;
+    padding-left: 15px;
+}
+
+.plan__card__feat__title {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.plan__card__feat {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.plan__card__feat p {
+    margin-left: 10px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 650px) {
+    .plan__card {
+        display: block;
+        height: fit-content;
+        width: 80%;
+    }
+
+    .plan__feat__container {
+        margin-top: 20px;
+        padding-left: 0px;
+    }
+}

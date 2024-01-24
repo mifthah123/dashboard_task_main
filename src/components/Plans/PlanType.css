@@ -1,0 +1,43 @@
+.plan__type__container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.plan__type__wrapper {
+    display: flex;
+    border: 1px solid #000;
+    width: 200px;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.plan__type__btn {
+    border: none;
+    width: 100%;
+    border-radius: 50px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.plan__type__btn__active {
+    background-color: #C9E4FE;
+}
+
+.plan__type__btn__unfocused {
+    background-color: #FFF;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.plan__type__btn__unfocused:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.annual__type {
+    display: flex;
+}
+
+.annual__type span {
+    font-size: 8px;
+    color: rgb(0, 106, 71);
+    margin-left: 3px;
+}
